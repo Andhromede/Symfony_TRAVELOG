@@ -1,0 +1,94 @@
+
+/************** Variables de couleurs ************/
+    body{
+        --turquoise:#52908B;
+        --sable:#DCDACD;
+        --grisFonce: #656565;
+        --noir: #2c2c2c;
+        font-family: 'Halant', serif;
+    }
+
+/************** txt colors ************/
+    .txtNoir{
+        color: var(--noir);
+    }
+
+    .txtTurquoise{
+        color: var(--turquoise);
+    }
+
+
+/************** bg colors ************/
+    .bgSable{
+        background-color: var(--sable);
+    }
+
+    .bgWhite{
+        background-color: white;
+    }
+
+    .bgTurquoise{
+        background-color: var(--turquoise);
+    }
+
+
+/************** Polaroids de gauche ************/
+    .left-polaroid {
+        padding: 0.75em 0.75em 1.75em 0.75em;
+        box-shadow: 0em 0.5em 1em 0em #656565;
+        transform: rotate(-8deg);
+    }
+
+
+/************** Polaroids de droite ************/
+    .right-polaroid {
+        padding: 0.75em 0.75em 1.75em 0.75em;
+        box-shadow: 0em 0.5em 1em 0em #656565;
+        transform: rotate(8deg);
+    }
+
+        @media (max-width : 1400px) {
+            .left-polaroid, .right-polaroid {
+                padding-bottom: 4em;
+                margin-bottom: 4em;
+            }
+        }
+
+        @media (max-width : 1090px) {
+            .left-polaroid, .right-polaroid {
+                padding-bottom: 2em;
+                margin-bottom: 2em;
+            }
+        }
+
+/************** menu lateral ************/ 
+    .menuLat {
+        background-color: #dcdacd;
+        margin-left: -0.95em;
+        margin-top: -8em;
+        padding-top: 6em;
+        padding-bottom: 10em;
+        margin-bottom: -5%;
+    }
+
+
+/************** boutons ************/ 
+    .btnContact{
+        background-color: #52908B !important;
+        margin-top: 5%;
+        border-radius: 5em !important;
+    }
+
+
+/************** Margins ************/        
+    .mt-4em{
+        margin-top: 4em;
+    }
+
+    .mt-8em{
+        margin-top: 8em;
+    }
+
+    .mb-8em{
+        margin-bottom: 8em;
+    }

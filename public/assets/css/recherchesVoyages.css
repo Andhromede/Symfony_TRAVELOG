@@ -1,0 +1,159 @@
+/************** bg sable ************/ 
+    .bg-sable {
+        background-color: #dcdacd;
+        margin-left: -0.95em;
+        margin-top: -8em;
+        padding-top: 5em;
+        padding-bottom: 10em;
+        margin-bottom: -5% !important;
+    }
+
+
+/************** titre des section ************/ 
+    .titreSection{
+        color: var(--noir);
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-left: -1em;
+    }
+
+        @media (max-width: 600px) {
+            .titreSection{
+                font-size: 0.6em ;
+                font-weight: 600;
+                margin-left: -1.5em ;
+            }
+
+            .bg-sable {
+                max-width: 10em;
+            }
+
+            .accordion-section .panel-default .panel-title a:after {
+                font-size: 0.7em !important;
+            }
+        }
+
+
+/************** séparation catégories ************/    
+    hr {
+        margin-top: -2em;
+    }
+
+
+/************** taille des text ************/     
+    .txtSize{
+        font-size: 1.5em;
+    }
+
+        @media (max-width: 840px) {
+            .txtSize{
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .txtSize{
+                font-size: 1em;
+            }
+        }
+
+
+/************** text + icones des accordeons ************/  
+    .accordion-section .panel-default .panel-title a:after {
+        font-family: 'FontAwesome';
+        font-style: normal;
+        font-size: 1.5rem;
+        content: "\f106";
+        color: var(--noir);
+    }
+
+    .accordion-section .panel-default .panel-title a.collapsed:after {
+        content: "\f107";
+    }
+
+    a.aLink, .nameUser{
+        color: var(--grisFonce) !important;
+        font-weight: 500;
+        font-size: 1.2em !important;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: var(--noir) !important;
+    }
+
+
+/************** cadre sable ************/  
+    .encadreSable{
+        background-color: var(--sable);
+        padding-top: 20px;
+        padding-left: 50px;
+        border: var(--noir) solid 1px;
+    }
+
+        @media (max-width : 500px) {
+            .encadreSable{
+                background-color: var(--sable);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+            }
+        }
+
+
+/************** Photo ************/  
+    .photosVoyage { 
+        max-width:100%;
+    }
+
+        @media (max-width : 500px) {
+            .photosVoyage {
+                display: none;
+            }
+        }
+    
+
+/************** padding & margin ************/          
+    .mb-text{
+        margin-bottom: -5em;
+    }
+
+    @media (max-width : 770px) {
+        .mb-10em{
+            margin-bottom: 4em;
+        }
+    }
+
+    .mt-3em{
+        margin-top: 3em !important;
+    }
+
+
+/************** titre des voyages ************/ 
+    .titleVoyage{
+        color: var(--turquoise);
+        font-weight: 600;
+    }
+
+/************** pagination ************/  
+    .pages {
+        font-size:1.4em;
+        margin-top:4em;
+        margin-left:30em;
+    }
+
+    #noPage { 
+        background-color:#dcdacd;
+        color:#52908b;
+        border:1.5px solid #52908b;
+    }
+
+    #noPage:focus { 
+        background-color:#52908b;
+        color:#dcdacd;
+    }
+
+    #noPage:hover {
+        background-color:#52908b;
+        color:#dcdacd;
+    }

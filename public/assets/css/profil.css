@@ -1,0 +1,47 @@
+/********************* MENU LATERAL GAUCHE *********************/ 
+/************** bg ************/ 
+    .bg-sable {
+        background-color: #dcdacd;
+        margin-left: -0.95em;
+        margin-top: -8em;
+        padding-top: 6em;
+        padding-bottom: 10em;
+        margin-bottom: -5%;
+    }
+
+/************** photo de profil ************/ 
+    .photo{
+        max-height: 120px;
+    }
+
+        @media (max-width: 600px) {
+            .photo{
+                max-height: 90px;
+            }
+        }
+
+
+/************** textes menu laterale ************/         
+    .txtMenu{
+        font-weight: 700;
+        font-size: 1.3em;
+        color: var(--noir);
+    }
+
+
+/********************* CADRE DE DROITE *********************/ 
+/************** texts soulignés ************/ 
+    u{
+        color: var(--noir);
+    }
+
+/************** titres des rubriques ************/ 
+    .titreRubric{
+        font-size: 1.1em;
+        text-decoration: underline;
+        color: var(--noir);
+        font-weight: 600;
+    }
+
+
+

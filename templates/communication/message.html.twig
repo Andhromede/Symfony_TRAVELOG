@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Travelog-Accueil
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/contact.css')}}">
+{% endblock %}
+
+{% block body %}
+
+    {# MESSAGES DE STATUS #}
+	{# <div class="alert alert-success msg-erreur">Votre email à bien été envoyé !</div>
+	<div class="alert alert-danger msg-erreur">Erreur lors de l'envois d'email, veuillez réessayer  !</div> #}
+
+
+	<div class="row mt-5">
+		<div class="bg-sable mx-auto my-5 col-10 col-md-7">
+
+			<p class="textContact my-4 text-center font-weight-bolder">
+				MESSAGERIE 
+			</p>
+
+			<form action="../controleur/controleur_contact.php?action=envoyer" method="POST">
+				<div class="form-row mx-auto">
+					<div class="form-group col-12 col-sm-6 col-md-5 col-lg-4  mx-auto">
+						<input type="text" class="Pseudo form-control" id="pseudo" placeholder="Votre pseudo" name="pseudo" value="Destinataire" disabled>
+					</div>
+
+					<div class="form-group col-12 col-sm-6 col-md-5 col-lg-4  mx-auto">
+						<input type="text" class="Email form-control" id="sujet" placeholder="Sujet" name="sujet">
+					</div>
+
+					<div class="form-group col-md-11 col-lg-10 mx-auto">
+						<input type="text" class="message form-control" id="message" placeholder="Saisissez votre message ici..." name="message">
+					</div>
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="boutonEnvoyer btn btn-sm mx-auto mb-3" name="envoyer">Envoyer</button>
+                    </div>
+					
+                </div>
+			</form>
+
+		</div>
+	</div>		
+
+
+
+{% endblock %}

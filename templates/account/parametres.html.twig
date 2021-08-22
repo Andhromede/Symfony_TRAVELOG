@@ -1,0 +1,222 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profil{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/profil.css')}}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid fixed-left d-flex">
+
+        {# MENU DE GAUCHE #}
+		<div class="bg-sable col-5 col-md-3 text-center">
+
+            <div class="txtMenu mb-3">Lydlus</div>
+
+            <div class="col-12 text-center">
+                <img src="{{ asset('img/photoDefaut.png')}}" class="photo"/>
+            </div>
+
+			<div class="txtMenu pt-3">40 ans</div>
+
+            <hr class="my-4">
+
+			<u class="txtMenu text-underline">Langue parlées :</u>
+			<div class="h5 mt-3">Anglais</div>
+            <div class="h5">Francais</div>
+
+            <hr class="my-4">
+            
+            <div>
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact" name="btnVoyages">Mes voyages</button>
+			    </a>
+            </div>	
+			
+            <div>
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact" name="btnVoyages">Mes messages</button>
+			    </a>
+            </div>
+
+            <div>
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact" name="btnVoyages">Mes amis</button>
+			    </a>
+            </div>
+		</div>
+
+
+        {# SECTION DE DROITE #}
+        <div class="col-7 col-md-9 mx-auto">
+
+            <div class="col-12 col-md-8 mx-auto">
+                <u class="h2">Lydlus</u>
+            </div>
+            
+            {# Section profil #}
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="titreRubric h5 mt-4em">Profil :</div>
+            </div>
+
+            <div class="col-12 col-md-8 cadreBeige test mx-auto pt-2">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<label>Pseudo:</label>
+						<input type="text" class="form-control" name="pseudo" value="Lydlus" disabled="enabled">
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<label>Date de naissance:</label><input type="date" class="form-control" name="birthday" value="birthday">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<label>Pays:</label>
+                        <input type="text" class="form-control mb-3" name="nation" value="France">
+					</div>
+				</div>
+			</div>
+
+
+            {# Section Securité #}
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="titreRubric h5 mt-4em">Sécurité :</div>
+            </div>
+
+            <div class="col-12 col-md-8 cadreBeige test mx-auto pt-2">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<label>Ancien Mot de passe:</label> 
+                        
+                        <div class="input-group" id="show_hide_password">
+                            <input class="form-control" type="password" value="*********">
+                            
+                            <div class="input-group-addon">
+                                <a href="" class=""><i class="fa fa-eye-slash" aria-hidden="true" style="color:black"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+						<label>Nouveau Mot de passe:</label> 
+                        
+                        <div class="input-group" id="show_hide_password">
+                            <input class="form-control" type="password" value="*********">
+                            
+                            <div class="input-group-addon">
+                                <a href="" class=""><i class="fa fa-eye-slash" aria-hidden="true" style="color:black"></i></a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<label>Email:</label>
+                        <input type="email" class="form-control mb-3" name="email" value="andhromede@hotmail.fr">                        
+					</div>
+
+                    <div class="col-12 col-lg-6">
+						<label>Confirmer l'email:</label>
+                        <input type="email" class="form-control mb-3" name="email" value="andhromede@hotmail.fr">
+					</div>
+				</div>
+			</div>
+
+
+            {# Section description #}
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="titreRubric h5 mt-4em">A propos de vous :</div>
+            </div>
+
+            <div class="col-12 col-md-8 cadreBeige test mx-auto pt-2">
+				<div class="row">
+					<div class="col-12 mb-3">
+                        <label>Description:</label>
+                        <textarea class="form-control" rows="8" class="form-control" name="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum nostrum, mollitia maiores magnam tenetur natus tempora sunt, deserunt tempore officia expedita, laboriosam quasi perferendis possimus modi ipsum reprehenderit quo?</textarea>
+                    </div>
+				</div>
+			</div>
+
+
+             {# Section Divers #}
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="titreRubric h5 mt-4em">Divers :</div>
+            </div>
+
+            <div class="col-12 col-md-8 cadreBeige test mx-auto">
+				<div class="row">
+					<div class="col-12 col-lg-6 mb-3 mb-md-2 pt-2">
+						<label class="mr-2">Langue parlée:</label>
+						<select id="langue" class="select w-50" name="langue">
+                            <option value="1" class="" selected >Allemand</option>
+                            <option value="2" class="" >Anglais</option>
+                            <option value="3" class="" >Arabe</option>
+                            <option value="4" class="" >Espagnol</option>
+							<option value="5" class="" >Français</option>
+                            <option value="6" class="" >Italien</option>
+                            <option value="7" class="" >Russe</option>
+                            <option value="8" class="" >Suedois</option>  
+						</select>
+					</div>
+				</div>
+			</div>
+
+
+            {# Section confidentialité #}
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="titreRubric h5 mt-4em">Confidentialité :</div>
+            </div>
+
+            <div class="col-12 col-md-8 cadreBeige test mx-auto">
+				<div class="row">
+					<div class="col-12 pt-2">
+                        <input type="checkbox" class="checkbox" name="contact">
+                        <label class="ml-1">Demandes d'amis</label>
+                    </div>
+
+                    <div class="col-12">
+                        <input type="checkbox" class="checkbox" name="notifmail">
+                        <label class="ml-1">Notifications par mail</label>
+                    </div>
+
+                    <div class="col-12">
+                       <input type="checkbox" class="checkbox" name="supressionCompte">
+                       <label class="ml-1">Supprimer mon compte</label>
+                    </div>
+				</div>
+			</div>
+
+
+            <div class="text-center">
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact px-5 mt-5" name="btnVoyages">Valider</button>
+			    </a>
+            </div>
+        </div>
+	</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    
+    {# $(document).ready(function() {
+        $("#show_hide_password a").on('click', function(event) {
+            event.preventDefault();
+            if($('#show_hide_password input').attr("type") == "text"){
+                $('#show_hide_password input').attr('type', 'password');
+                $('#show_hide_password i').addClass( "fa-eye-slash" );
+                $('#show_hide_password i').removeClass( "fa-eye" );
+            }else if($('#show_hide_password input').attr("type") == "password"){
+                $('#show_hide_password input').attr('type', 'text');
+                $('#show_hide_password i').removeClass( "fa-eye-slash" );
+                $('#show_hide_password i').addClass( "fa-eye" );
+            }
+        });
+    }); #}
+{% endblock %}

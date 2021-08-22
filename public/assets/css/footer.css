@@ -1,0 +1,63 @@
+/*********** hauteur navbar + responsive ***********/
+    .txtDiv{
+        height: 35px;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+    }
+
+        @media (max-width: 1073px) {
+            .txtDiv{
+                height: 55px !important;
+                text-align: center;
+                color: white;
+                font-weight: 500;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .txtDiv{
+                height: 150px !important;
+                text-align: center;
+                color: white;
+                font-weight: 500;
+            }
+        }
+
+
+/*********** liens ***********/
+    a{
+        color: white;
+        font-weight: 500;
+    }
+
+    a:hover{
+        color: white;
+    }
+
+
+/*********** margin du dessus ***********/
+    .mt-footer{
+        margin-top: 5%;
+    }
+
+    
+/*********** trait de séparation ***********/
+    .separateur2{
+        background-color: white !important;
+        height: 1.5em;
+        width: 1.5px;
+        /* margin-left: -2em !important; */
+        margin-top: 0.35em;
+    }
+
+        @media (max-width: 991px) {
+            .separateur2{
+            display: none;
+            }
+        }
+        
+    .z-indexNeg{
+        z-index: -1 !important;
+    }
+

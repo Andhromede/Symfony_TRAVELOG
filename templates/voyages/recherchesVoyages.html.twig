@@ -1,0 +1,251 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Recherches-Voyages{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/recherchesVoyages.css')}}">
+{% endblock %}
+
+{% block body %}
+
+	<div class="container-fluid fixed-left d-flex">
+
+        {# MENU DE GAUCHE #}
+		<div class="bg-sable col-5 col-md-3">
+			<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+				<div class="container">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						
+                        {# CONTINENT #}
+                        <div class="panel panel-default">
+							<div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+								<h3 class="panel-title">
+									<a class="collapsed titreSection" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+										Continents
+									</a>
+								</h3>
+							</div>
+
+                            <hr>
+
+							<div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+								 <div class="">
+	                                <input type="checkbox"><span class="ml-2 txtSize">Asie</span>
+	                            </div>
+	
+                                <div class="">
+                                    <input type="checkbox"><span class="ml-2 txtSize">Europe</span>
+                                </div>
+	
+                                <div class="mb-4">
+                                    <input type="checkbox"><span class="ml-2 txtSize">Amérique du Nord</span>
+                                </div>
+							</div>
+						</div>
+
+
+                        {# PAYS #}
+                        <div class="panel panel-default">
+							<div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+								<h3 class="panel-title">
+									<a class="collapsed titreSection" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+										Pays
+									</a>
+								</h3>
+							</div>
+
+                            <hr>
+
+							<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+								 <div class="">
+	                                <input type="checkbox"><span class="ml-2 txtSize">Japon</span>
+	                            </div>
+	
+                                <div class="">
+                                    <input type="checkbox"><span class="ml-2 txtSize">Angleterre</span>
+                                </div>
+	
+                                <div class="mb-4">
+                                    <input type="checkbox"><span class="ml-2 txtSize">USA</span>
+                                </div>
+							</div>
+						</div>
+
+
+                        {# VILLE #}
+                        <div class="panel panel-default">
+							<div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+								<h3 class="panel-title">
+									<a class="collapsed titreSection" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+										Villes
+									</a>
+								</h3>
+							</div>
+
+                            <hr>
+
+							<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+								 <div class="">
+	                                <input type="checkbox"><span class="ml-2 txtSize">Tokyo</span>
+	                            </div>
+	
+                                <div class="">
+                                    <input type="checkbox"><span class="ml-2 txtSize">Londres</span>
+                                </div>
+	
+                                <div class="mb-4">
+                                    <input type="checkbox"><span class="ml-2 txtSize">New-York</span>
+                                </div>
+							</div>
+						</div>
+
+
+                        {# VILLE #}
+                        <div class="panel panel-default">
+							<div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+								<h3 class="panel-title">
+									<a class="collapsed titreSection" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+										Trier par 
+									</a>
+								</h3>
+							</div>
+
+                            <hr>
+
+							<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+								 <div class="">
+	                                <input type="checkbox"><span class="ml-2 txtSize">Les + populaires</span>
+	                            </div>
+	
+                                <div class="pb-auto">
+                                    <input type="checkbox"><span class="ml-2 txtSize">Les + récents</span>
+                                </div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+        {# SECTION DE DROITE 1 #}
+        <div class="col-7 col-md-9 mx-auto">
+
+            {# voyage droite #}
+            <div class="mx-auto">
+                <h2 class="col-2 titleVoyage text-right pl-5">Titre</h2>
+
+                <div class="encadreSable col-12 col-sm-10 mx-auto d-flex mb-10em">
+                    <div class="col-0"><img src="{{ asset('img/china.jpg')}}" class="photosVoyage"/></div>
+                    
+                    <div class="col-12 col-md-8 col-lg-7 font-weight-bolder mb-text">
+                        <div class="mt-1 col-12">
+                            <div class="nameUser text-left">Thomas</div> 
+                        </div>
+
+                        <div class="text-right txtNoir col-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id incidunt dolorem cum, dolores velit sint magni ullam provident, laudantium libero repudiandae eos nisi consequatur officia recusandae iste minus ipsam.
+                            Consequuntur, facilis ullam! Magnam aut sapiente maxime, aperiam porro perspiciatis labore doloremque, nihil laboriosam incidunt ratione(...)
+                        </div>
+                        
+                        <div class="text-right col-12 mb-8em mt-sm-3 mt-4">
+                            <a href="" class="aLink">Découvrir son voyage</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {# voyage droite 2 #}
+            <div class="mx-auto ">
+                <h2 class="col-11 titleVoyage text-right pl-5 mt-sm-5 mt-3em">Titre</h2>
+
+                <div class="encadreSable col-12 col-sm-10 mx-auto d-flex mb-10em">
+
+                    <div class="col-12 col-md-8 col-lg-7 font-weight-bolder mb-text">
+                        <div class="mt-1 col-12">
+                            <div class="nameUser text-right">Julie</div> 
+                        </div>
+
+                        <div class="text-rigth txtNoir col-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id incidunt dolorem cum, dolores velit sint magni ullam provident, laudantium libero repudiandae eos nisi consequatur officia recusandae iste minus ipsam.
+                            Consequuntur, facilis ullam! Magnam aut sapiente maxime, aperiam porro perspiciatis labore doloremque, nihil laboriosam incidunt ratione(...)
+                        </div>
+                        
+                        <div class="text-left col-12 mb-8em mt-sm-3 mt-4">
+                            <a href="" class="aLink">Découvrir son voyage</a> 
+                        </div>
+                    </div>
+
+                     <div class="col-0"><img src="{{ asset('img/india.jpg')}}" class="photosVoyage"/></div>
+                </div>
+            </div>
+
+            {# voyage droite 3 #}
+            <div class="mx-auto">
+                <h2 class="col-2 titleVoyage text-right pl-5 mt-3em">Titre</h2>
+
+                <div class="encadreSable col-12 col-sm-10 mx-auto d-flex mb-10em">
+                    <div class="col-0"><img src="{{ asset('img/venise.jpg')}}" class="photosVoyage"/></div>
+                    
+                    <div class="col-12 col-md-8 col-lg-7 font-weight-bolder mb-text">
+                        <div class="mt-1 col-12">
+                            <div class="nameUser text-left">Alexandra</div> 
+                        </div>
+
+                        <div class="text-right txtNoir col-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id incidunt dolorem cum, dolores velit sint magni ullam provident, laudantium libero repudiandae eos nisi consequatur officia recusandae iste minus ipsam.
+                            Consequuntur, facilis ullam! Magnam aut sapiente maxime, aperiam porro perspiciatis labore doloremque, nihil laboriosam incidunt ratione(...)
+                        </div>
+                        
+                        <div class="text-right col-12 mb-8em mt-sm-3 mt-4">
+                            <a href="" class="aLink">Découvrir son voyage</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {# voyage droite 4 #}
+            <div class="mx-auto ">
+                <h2 class="col-11 titleVoyage text-right pl-5 mt-sm-5 mt-3em">Titre</h2>
+
+                <div class="encadreSable col-12 col-sm-10 mx-auto d-flex mb-10em">
+
+                    <div class="col-12 col-md-8 col-lg-7 font-weight-bolder mb-text">
+                        <div class="mt-1 col-12">
+                            <div class="nameUser text-right">David</div> 
+                        </div>
+
+                        <div class="text-rigth txtNoir col-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id incidunt dolorem cum, dolores velit sint magni ullam provident, laudantium libero repudiandae eos nisi consequatur officia recusandae iste minus ipsam.
+                            Consequuntur, facilis ullam! Magnam aut sapiente maxime, aperiam porro perspiciatis labore doloremque, nihil laboriosam incidunt ratione(...)
+                        </div>
+                        
+                        <div class="text-left col-12 mb-8em mt-sm-3 mt-4">
+                            <a href="" class="aLink">Découvrir son voyage</a> 
+                        </div>
+                    </div>
+
+                     <div class="col-0"><img src="{{ asset('img/maroc.jpg')}}" class="photosVoyage"/></div>
+                </div>
+            </div>
+
+            {# pagination #}
+            <div class="pagination" id="pagination">
+                <nav aria-label="Page navigation" class="pages mx-auto">
+                    <ul class="pagination pagination-sm" id="pagination">
+                        <li class="page-item d-flex" id="encadreNoPage">
+                            <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">1</a>
+                            <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">2</a>
+                            <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+	</div>
+
+
+	<script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+{% endblock %}

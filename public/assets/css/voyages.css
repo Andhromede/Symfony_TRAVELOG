@@ -1,0 +1,118 @@
+/************** titre recherche ************/  
+    .txtRecherche {
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 600;
+        color: #5c5c5c;
+    }
+
+        @media (max-width : 750px) {
+            .txtRecherche {
+                display: none;
+            }
+        }
+
+
+/************** corps des recherches ************/  
+    .cadreBeige {
+        background-color: #dcdacd;
+        height: 3.8em;
+        width: 60%;
+        border: solid var(--turquoise) 0.2em;
+        border-radius: 5px;
+    }
+
+        @media (max-width : 900px) {
+            .cadreBeige {
+                width: 95%;
+            }
+        }
+
+
+/************** corps du tableau ************/    
+    #corpsTableVoyage {
+        background-color: #dcdacd;
+        text-align: center;
+        font-size: 1.15em;
+    }
+
+
+/************** liens ************/  
+    a.lienProfil{
+        color:#707070;
+    }
+
+    a.lienTitre{
+        color:#2c2c2c;
+    }
+
+    a.lienProfil:hover, a.lienTitre:hover{
+        color:#707070;
+    }
+
+
+/************** pagination ************/  
+    .pages {
+        font-size:1.4em;
+        margin-top:1em;
+        margin-left:30em;
+    }
+
+    #noPage { 
+        background-color:#dcdacd;
+        color:#52908b;
+        border:1.5px solid #52908b;
+    }
+
+    #noPage:focus { 
+        background-color:#52908b;
+        color:#dcdacd;
+    }
+
+    #noPage:hover {
+        background-color:#52908b;
+        color:#dcdacd;
+    }
+
+
+/************** txt nbr voyages  ************/
+    .txt-voyages {
+        color: #707070;
+        font-style: italic;
+    }
+
+
+/************** alignement txt dans tableau  ************/
+    .table { 
+        text-align:center;
+    }
+
+
+/************** tr du tableau  ************/
+    #enteteTableVoyage {
+        background-color:#52908b;
+        color:white;
+    }
+
+
+/************** photos des voyages  ************/
+    .photosVoyage { 
+        max-width:20em;
+    }
+
+        @media (max-width : 1000px) {
+            .photosVoyage {
+                    max-width:13em;
+                }
+        }
+
+        @media (max-width : 700px) {
+            .photosVoyage {
+                max-width: 5em;
+            }
+        }
+
+/************** td  ************/        
+    td{
+        border-top: 3px solid #ffffff !important;
+    }

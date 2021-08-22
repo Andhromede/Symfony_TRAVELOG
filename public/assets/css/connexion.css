@@ -1,0 +1,69 @@
+/************** titre Travelog ************/
+    .travelog {
+        color: var(--turquoise);
+        font-family: 'Rancho', cursive;
+        font-size:5em;
+        letter-spacing:0.15em;
+        text-align: center;
+    }
+
+    @media (max-width : 600px) {
+        .travelog {
+            font-size:3em;
+        }
+    }
+
+
+/************** Logo Travelog ************/
+    .logo {
+        height: 8em;
+        width: 8em;
+    }
+
+
+/************** encadré de connexion ************/
+    .cadreBeige {
+        background-color: #dcdacd;
+        height:27em;
+        width:27em;
+        border: solid var(--turquoise) 0.2em;
+    }
+
+    .cadreBeigeTxt {
+        text-align:center;
+        font-size:1.6em;
+        padding-top:1em;
+    }
+
+    .formulaireconnexion {
+        color:#707070;
+        max-width:18em;
+        padding-top:2em;
+        margin-left:5em;
+    }
+
+
+/************** bouton de connexion ************/
+    .boutonconnexion {
+        font-size:1.5em;
+        color:white;
+        background-color: #52908b;
+        max-width:12em;
+        height:1.8em;
+    }
+
+    .boutonconnexion:hover {
+        box-shadow: 5px 5px 5px #2a4946 inset;
+        font-size:1.4em;
+        margin-bottom: 0.15em;
+        color: white;
+        margin-bottom: 0.13em;
+     }
+
+
+/************** lien survolé ************/
+    a:hover{
+        text-decoration: none;
+        color: rgb(43, 43, 43);
+    }
+    

@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voyages{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/voyages.css')}}">
+{% endblock %}
+
+{% block body %}
+
+	<div class="container-fluid">
+         {# <div class='alert alert-danger text-center'> Ce site est en maintenance. Merci de revenir ultérieurement. </div>
+        <div class='alert alert-danger text-center'> Erreur de connexion avec la base de données. Merci de réessayer ultérieurement. </div>
+        <div class='alert alert-danger text-center'> Erreur avec la base de données. Merci de réessayer ultérieurement. </div>
+        <div class='alert alert-danger text-center'> Erreur avec la base de données. Merci de réessayer ultérieurement. </div> #}
+
+        <div class="col-12 text-center mt-5">
+            <p class="txt-voyages mb-4">Plongez au cœur des (nbr) voyages des membres de Travelog !</p>
+        </div>
+
+        <div class="col-12">
+
+            <div class="cadreBeige m-auto">
+                <div class="form-group d-flex m-auto">
+                    <div class="text-center txtRecherche col-2 my-auto">Recherches</div>
+                    <input type="text" name="continent" id="input-continent" placeholder="Continent" class="mx-auto form-control col-5 col-sm-4 col-ml-3 mt-2">
+                    <input type="text" name="pays" id="input-pays" placeholder="Pays"  class="mx-auto form-control col-5 col-sm-4 col-ml-3 mt-2">
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <table class="table table-sm" id="filtre">
+                    <thead class="thead" id="enteteTableVoyage">
+                        <tr>
+                            <th scope="col">TITRE</th>
+                            <th scope="col">CONTINENT</th>
+                            <th scope="col">PAYS</th>
+                            <th scope="col">VOYAGEUR</th>
+                            <th scope="col">EN IMAGE</th>
+                            <th scope="col">RESUME</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="corpsTableVoyage">
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-6 col-md-2"><a href="" class="lienTitre"><strong>Maecenas blandit cursus risus, quis ultrices turpi</strong></a></td>
+                            <td id="filtreContinent" class="col-6 col-md-1">Asie</td>
+                            <td id="filtrePays" class="col-6 col-md-1">Chine</td>
+                            <td class="col-6 col-md-1"><a href="../controleur/monProfilControleur.php?pseudo=" class="lienProfil">David</a></td>
+                            <td class="col-6 col-md-3"><img src="{{ asset('img/china.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-6 col-md-4 text-justify p-2" id="resumeTable">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat distinctio provident est ipsam exercitationem nihil excepturi, eligendi porro eveniet doloribus aut? Explicabo vel soluta qui incidunt fuga. Ut, perferendis!
+                                Excepturi earum atque aut enim. Ullam vel, sint iure cupiditate saepe reprehenderit mollitia. Repudiandae commodi ducimus non in! Quod labore amet repellendus doloribus a quae aspernatur totam pariatur tenetur ducimus.
+                                </br>
+                                {# <a href="../controleur/detail_voyageCONTROLEUR.php?code_voyage=" id="lienVoyage"><button class="btn" id="btnDetailsVoyage">Découvrir</button></a> #}
+                            </td>
+                        </tr>
+
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-2"><a href="" class="lienTitre"><strong>Duis rutrum nulla id quam cursus, eu aliquam nisl</strong></a></td>
+                            <td id="filtreContinent" class="col-1">USA</td>
+                            <td id="filtrePays" class="col-1">New-York</td>
+                            <td class="col-1"><a href="../controleur/monProfilControleur.php?pseudo=" class="lienProfil">Thomas</a></td>
+                            <td class="col-3"><img src="{{ asset('img/dubai.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 text-justify p-2" id="resumeTable">Curabitur leo leo, sagittis sed augue quis, semper convallis augue. Donec sed turpis vitae ex pretium congue quis ut nisi.
+                                </br>
+                                {# <a href="../controleur/detail_voyageCONTROLEUR.php?code_voyage=" id="lienVoyage"><button class="btn" id="btnDetailsVoyage">Découvrir</button></a> #}
+                            </td>
+                        </tr>
+
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-2"><a href="" class="lienTitre"><strong>Nullam finibus interdum nunc</strong></a></td>
+                            <td id="filtreContinent" class="col-1">Europe</td>
+                            <td id="filtrePays" class="col-1">Londres</td>
+                            <td class="col-1"><a href="../controleur/monProfilControleur.php?pseudo=" class="lienProfil">Anna</a></td>
+                            <td class="col-3"><img src="{{ asset('img/londres.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 text-justify p-2" id="resumeTable">Ut dapibus ut nisi volutpat mollis. Integer nec fringilla diam. Suspendisse a nisi sed mauris suscipit luctus. Ut sed iaculis ligula.
+                                </br>
+                                {# <a href="../controleur/detail_voyageCONTROLEUR.php?code_voyage=" id="lienVoyage"><button class="btn" id="btnDetailsVoyage">Découvrir</button></a> #}
+                            </td>
+                        </tr>
+
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-2"><a href="" class="lienTitre"><strong>Vestibulum ante ipsum primis</strong></a></td>
+                            <td id="filtreContinent" class="col-1">Asie</td>
+                            <td id="filtrePays" class="col-1">Japon</td>
+                            <td class="col-1"><a href="../controleur/monProfilControleur.php?pseudo=" class="lienProfil">Laure</a></td>
+                            <td class="col-3"><img src="{{ asset('img/japon.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 text-justify p-2" id="resumeTable">Cras ullamcorper sapien nibh, nec vehicula magna molestie imperdiet. Praesent convallis egestas risus, id tempor neque auctor venenatis.
+                                </br>
+                                {# <a href="../controleur/detail_voyageCONTROLEUR.php?code_voyage=" id="lienVoyage"><button class="btn" id="btnDetailsVoyage">Découvrir</button></a> #}
+                            </td>
+                        </tr>
+
+                        <tr id="row">
+                            <td id="titreVoyage" class="col-2"><a href="" class="lienTitre"><strong>Maecenas blandit cursus risus</strong></a></td>
+                            <td id="filtreContinent" class="col-1">Europe</td>
+                            <td id="filtrePays" class="col-1">Hollande</td>
+                            <td class="col-1"><a href="../controleur/monProfilControleur.php?pseudo=" class="lienProfil">Eric</a></td>
+                            <td class="col-3"><img src="{{ asset('img/hambourg.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 text-justify p-2" id="resumeTable">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat distinctio provident est ipsam exercitationem nihil excepturi, eligendi porro eveniet doloribus aut? Explicabo vel soluta qui incidunt fuga. Ut, perferendis!
+                                Excepturi earum atque aut enim. Ullam vel, sint iure cupiditate saepe reprehenderit mollitia.
+                                </br>
+                                {# <a href="../controleur/detail_voyageCONTROLEUR.php?code_voyage=" id="lienVoyage"><button class="btn" id="btnDetailsVoyage">Découvrir</button></a> #}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pagination" id="pagination">
+        <nav aria-label="Page navigation" class="pages mx-auto">
+            <ul class="pagination pagination-sm" id="pagination">
+                <li class="page-item d-flex" id="encadreNoPage">
+                    <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">1</a>
+                    <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">2</a>
+                    <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">3</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+{% endblock %}

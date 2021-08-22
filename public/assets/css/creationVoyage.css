@@ -1,0 +1,57 @@
+/************** encadré beige ************/
+    .cadreBeige{
+        background-color: var(--sable);
+        padding-bottom: 5em;
+        padding-top: 2em;
+        /* margin-top: -4em; */
+        /* margin-bottom: -4.8em; */
+    }
+
+
+/************** titres des sections ************/
+    .sizeTxt{
+        font-weight: 600 !important;
+        font-size: 1.2em;
+    }
+
+
+/************** padding entre les txt et les input dates ************/
+    .mt-1em{
+        margin-top: -1em;
+    }
+
+
+/************** hr ************/
+    hr{
+        background-color: var(--grisFonce);
+    }
+
+
+/************** espaces entre les sections ************/
+    .my-5em{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+
+/************** boutons ************/ 
+    .btnContact{
+        background-color: #52908B !important;
+        margin-top: 5%;
+        border-radius: 5em !important;
+    }
+
+/************** encadre des fichier ************/ 
+    .bgWhite{
+        background-color: white;
+        border-radius: 5px !important;
+    }
+
+
+/************** encadré turquoise ************/ 
+    .cadreTurquoise{
+        border: var(--turquoise) solid 3.5px;
+        border-radius: 5px;
+    }
+
+

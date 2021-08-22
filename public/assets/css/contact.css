@@ -1,0 +1,31 @@
+/************** encadré sable ************/    
+    .bg-sable{
+        background-color:#dcdacd;
+        border-radius: 5px;
+        border: solid var(--turquoise) 0.15em;
+    }
+
+
+/************** txt contact ************/
+    .textContact{
+        color: #52908b;
+        font-size:2em;
+    }
+
+
+/************** imput message ************/
+    .message{
+        padding-top: 1em !important;
+        padding-bottom: 12.5em !important;
+    }
+
+
+/************** bouton envoyer ************/
+    .boutonEnvoyer {
+        background-color: #52908b;
+        color:white;
+        font-size:1.1em;
+        letter-spacing:0.025em;
+        font-weight:bold;
+        width:8em;
+    }

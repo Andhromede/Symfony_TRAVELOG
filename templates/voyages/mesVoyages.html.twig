@@ -1,0 +1,137 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voyages{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/voyages.css')}}">
+{% endblock %}
+
+{% block body %}
+
+	<div class="container-fluid">
+         {# <div class='alert alert-danger text-center'> Ce site est en maintenance. Merci de revenir ultérieurement. </div>
+        <div class='alert alert-danger text-center'> Erreur de connexion avec la base de données. Merci de réessayer ultérieurement. </div>
+        <div class='alert alert-danger text-center'> Erreur avec la base de données. Merci de réessayer ultérieurement. </div>
+        <div class='alert alert-danger text-center'> Erreur avec la base de données. Merci de réessayer ultérieurement. </div> #}
+
+        <h1 class="text-center txtNoir font-weight-bolder">Mes voyages</h1>
+
+        <div class="col-12 text-center mt-4">
+            <p class="txt-voyages mb-4">2 voyages - 2 continents - 2 pays visités</p>
+        </div>
+
+        <u class="row ml-3 h5"><a class="txtNoir" href="{{path('creationVoyage')}}">Créer un voyage</a></u>
+
+        <div class="col-12">
+            <div class="row mt-3">
+                <table class="table table-sm" id="filtre">
+                    <thead class="thead" id="enteteTableVoyage">
+                        <tr>
+                            <th scope="col">TITRE</th>
+                            <th scope="col">CONTINENT</th>
+                            <th scope="col">PAYS</th>
+                            <th scope="col">EN IMAGE</th>
+                            <th scope="col">RESUME</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="corpsTableVoyage">
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-6 col-md-2">
+                                <a href="" class="lienTitre"><strong>Maecenas blandit cursus risus, quis ultrices turpi</strong></a>
+                            </td>
+                            <td id="filtreContinent" class="col-6 col-md-1">Asie</td>
+                            <td id="filtrePays" class="col-6 col-md-1">Chine</td>
+                            <td class="col-6 col-md-3"><img src="{{ asset('img/china.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 p-2" id="resumeTable">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quam molestiae? Vel, at. Ea deleniti vel nisi nulla totam, consectetur illo debitis at, voluptatum unde, aliquam iusto nobis dolores. Ipsam.
+                                    Obcaecati repellat reiciendis vitae architecto quaerat aliquid at, nam, quis, itaque distinctio quo. Asperiores, suscipit, aliquam quibusdam dolorem velit unde possimus odio veritatis voluptatibus.
+                                    Fugit, deleniti facilis! 
+                                </p> 
+                                <a href="" id="lienVoyage"><button class="btn font-weight-bolder txtTurquoise" id="btnDetailsVoyage">Supprimer le voyage</button></a>
+                            </td>
+                        </tr>
+
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-2">
+                                <a href="" class="lienTitre"><strong>Duis rutrum nulla id quam cursus, eu aliquam nisl</strong></a>
+                            </td>
+                            <td id="filtreContinent" class="col-1">USA</td>
+                            <td id="filtrePays" class="col-1">New-York</td>
+                            <td class="col-3"><img src="{{ asset('img/dubai.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 p-2" id="resumeTable">
+                                <p>
+                                    Curabitur leo leo, sagittis sed augue quis, semper convallis augue. Donec sed turpis vitae ex pretium congue quis ut nisi.
+                                </p> 
+                                <a href="" id="lienVoyage"><button class="btn font-weight-bolder txtTurquoise" id="btnDetailsVoyage">Supprimer le voyage</button></a>
+                            </td>
+                        </tr>
+
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-2">
+                                <a href="" class="lienTitre"><strong>Nullam finibus interdum nunc</strong></a>
+                            </td>
+                            <td id="filtreContinent" class="col-1">Europe</td>
+                            <td id="filtrePays" class="col-1">Londres</td>
+                            <td class="col-3"><img src="{{ asset('img/londres.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 p-2" id="resumeTable">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam minima ratione itaque distinctio maiores alias ipsa adipisci? Mollitia, repudiandae libero nihil atque quas a tempore quibusdam sit beatae!
+                                    Similique perferendis voluptate minus et qui odio voluptatum dolorum! Dolorum a nam, atque ab, hic dolore voluptatum dolorem harum nesciunt autem praesentium.
+                                </p> 
+                                <a href="" id="lienVoyage"><button class="btn font-weight-bolder txtTurquoise" id="btnDetailsVoyage">Supprimer le voyage</button></a>
+                            </td>
+                        </tr>
+
+                        <tr id=" row">
+                            <td id="titreVoyage" class="col-2">
+                                <a href="" class="lienTitre"><strong>Vestibulum ante ipsum primis</strong></a>
+                            </td>
+                            <td id="filtreContinent" class="col-1">Asie</td>
+                            <td id="filtrePays" class="col-1">Japon</td>
+                            <td class="col-3"><img src="{{ asset('img/japon.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 p-2" id="resumeTable">
+                                <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis officiis ratione quisquam blanditiis voluptatum quos asperiores aut delectus, consequatur voluptatibus voluptatem atque eveniet illo illum aperiam magnam dolore ea.
+                                </p> 
+                                <a href="" id="lienVoyage"><button class="btn font-weight-bolder txtTurquoise" id="btnDetailsVoyage">Supprimer le voyage</button></a>
+                            </td>
+                        </tr>
+
+                        <tr id="row">
+                            <td id="titreVoyage" class="col-2">
+                                <a href="" class="lienTitre"><strong>Maecenas blandit cursus risus</strong></a>
+                            </td>
+                            <td id="filtreContinent" class="col-1">Europe</td>
+                            <td id="filtrePays" class="col-1">Hollande</td>
+                            <td class="col-3"><img src="{{ asset('img/hambourg.jpg')}}" class="photosVoyage"/></td>
+                            <td  class="col-4 p-2" id="resumeTable">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, beatae nam officiis commodi magni voluptatem, ducimus asperiores pariatur quos officia obcaecati ipsam, neque odit. Laboriosam eos nostrum ea blanditiis possimus?
+                                    Libero, in? Obcaecati mollitia esse facilis magni nulla praesentium veniam, labore id! Iusto fugiat ad nulla cum itaque.
+                                </p> 
+                                <a href="" id="lienVoyage"><button class="btn font-weight-bolder txtTurquoise" id="btnDetailsVoyage">Supprimer le voyage</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pagination" id="pagination">
+        <nav aria-label="Page navigation" class="pages mx-auto">
+            <ul class="pagination pagination-sm" id="pagination">
+                <li class="page-item d-flex" id="encadreNoPage">
+                    <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">1</a>
+                    <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">2</a>
+                    <a class="page-link" id="noPage" href="accueilCONTROLEUR.php?page=">3</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+{% endblock %}

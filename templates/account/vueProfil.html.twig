@@ -1,0 +1,137 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profil{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/vueProfil.css')}}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid fixed-left d-flex">
+
+        {# MENU DE GAUCHE #}
+		<div class="menuLat col-5 col-md-3 text-center">
+
+            <div class="txtMenu mb-3">Lydlus</div>
+
+            <div class="col-12 text-center">
+                <img src="{{ asset('img/photoDefaut.png')}}" class="photo"/>
+            </div>
+
+			<div class="txtMenu pt-3">40 ans</div>
+
+            <hr class="my-4">
+
+			<u class="txtMenu text-underline">Langue parlées :</u>
+			<div class="h5 mt-3">Anglais</div>
+            <div class="h5">Francais</div>
+
+            <hr class="my-4">
+            
+            <div>
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact" name="btnVoyages">Mes voyages</button>
+			    </a>
+            </div>	
+			
+            <div>
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact" name="btnVoyages">Mes messages</button>
+			    </a>
+            </div>
+
+            <div>
+                <a href="">
+				    <button type="submit" class="btn btn-info btnContact" name="btnVoyages">Mes amis</button>
+			    </a>
+            </div>
+		</div>
+
+
+
+        {# SECTION DE DROITE #}
+        <div class="col-7 col-md-9 mx-auto">
+
+            {# pseudo #}
+            <div class="col-12 col-md-8 ml-2 ml-md-5 mb-4 mb-lg-1">
+                <u class="h2 ">Lydlus</u>
+            </div>
+            
+            <div class="row ml-auto d-none d-sm-flex">
+                <div class="col-6 col-lg-9 text-right">3 continents visités</div>
+                <div class="col-6 col-lg-3 ">12 pays visités</div>
+            </div>
+
+            {# Section description #}
+            <div class="col-11 bgSable test mx-auto pt-2 cadreTurquoise">
+				<div class="row">
+					<div class="col-12 mb-3">
+                        <label class="font-weight-bolder txtNoir">Description:</label>
+                        <textarea class="form-control" rows="6" class="form-control" name="description" disabled="disabled">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum nostrum, mollitia maiores magnam tenetur natus tempora sunt, deserunt tempore officia expedita, laboriosam quasi perferendis possimus modi ipsum reprehenderit quo?</textarea>
+                    </div>
+				</div>
+			</div>
+
+            {# polaroids #}
+            <div class="row w-90 bgSable mx-auto pt-2 mt-8em ">
+
+                {# gauche #}
+                <div class="col-12 col-md-6 pb-3">
+                    <div class="text-center titreRubric h5">Son dernier voyage</div>
+                    
+                    <div class="col-12 col-md-10 col-lg-8 left-polaroid mx-auto my-5 bgWhite">
+                        <div id="left-caroussel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="750">
+                                    <img src="{{ asset('img/photos_carousels/hambourg.jpg')}}" alt="left-caroussel slide 1" class="d-block w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+					
+                {# droite #}
+                <div class="col-12 col-md-6">
+                    <div class="text-center titreRubric h5">Le plus populaire</div>
+                    
+                    <div class="col-12 col-md-10 col-lg-8 right-polaroid mx-auto my-5 bgWhite">
+                        <div id="right-caroussel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="750">
+                                    <img src="{{ asset('img/photos_carousels/londres.jpg')}}" alt="left-caroussel slide 1" class="d-block w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+
+            {# derniers voyages #}
+            <div class="col-10 col-sm-8 col-md-5 col-lg-11 mt-8em mx-auto txtAutreVoy mb-4">Ses autres voyage :</div>
+
+            <div class="bgSable pt-5 pr-lg-5 pr-xl-1 row mx-auto w-90 cadreTurquoise">
+                <div class="mx-auto col-sm-12 col-md-4 col-lg-3 text-center">
+                    <img src="{{ asset('img/londres.jpg')}}" alt="" class="imgSize pb-2">
+                </div>
+
+                <div class="mx-auto col-sm-12 col-md-4 col-lg-3 text-center">
+                    <img src="{{ asset('img/hambourg.jpg')}}" alt="" class="imgSize pb-2">
+                </div>
+
+                <div class="mx-auto col-sm-12 col-md-4 col-lg-3 text-center">
+                    <img src="{{ asset('img//maroc.jpg')}}" alt="" class="imgSize pb-2">
+                </div>
+            </div>
+
+
+               
+            
+        </div>
+	</div>
+
+{% endblock %}
+
+{% block javascripts %}
+   
+{% endblock %}

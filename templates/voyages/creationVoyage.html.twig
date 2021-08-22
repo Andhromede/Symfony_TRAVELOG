@@ -1,0 +1,136 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Creer un Voyage{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/creationVoyage.css')}}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid ">
+        <div class="col-12 col-md-10 mx-auto cadreBeige cadreTurquoise">
+           
+            <h1 class="text-center txtNoir font-weight-bolder">Créer un voyage</h1>
+
+            <hr class="my-5 w-75">
+            
+            <form action="" method="post">
+                {# <div class="cadreTurquoise pb-5 mt-5"> #}
+
+
+
+
+
+                    {# TITRE #}
+                    {# <h4 class="text-center txtNoir sizeTxt sizeTxt mt-5">Titre</h4>
+
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-5 mx-auto mb-5">
+                        <input type="text" class="form-control" name="titre" placeholder="Intitulé du voyage" required>
+                    </div> #}
+
+                    {# <hr class="my-5 w-50"> #}
+                    {# <div class="my-5em"></div> #}
+
+                    {# INPUTS FILTRE #}
+                    <div class="row mx-auto text-center">
+                        <div class="col-sm-8 col-lg-5 mx-auto">
+                            <p class="txtNoir sizeTxt mx-auto"> Titre du voyage</br> 
+                            <input class="form-control w-75 mx-auto" type="text" name="titre" placeholder="Intitulé du voyage" required></p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-5 mx-auto mb-3">
+                            <p class="txtNoir sizeTxt mx-auto"> Continent</br> 
+                            <input class="form-control w-75 mx-auto" type="text" name="continent" placeholder="Ex: Europe" required></p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-5 mx-auto">
+                            <p class="txtNoir sizeTxt mx-auto"> Pays</br> 
+                            <input class="form-control w-75 mx-auto" type="text" name="pays" placeholder="Ex: France" required></p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-5 mx-auto">
+                            <p class="txtNoir sizeTxt mx-auto"> Ville</br> 
+                            <input class="form-control w-75 mx-auto" type="text" name="ville" placeholder="Ex: Paris" required></p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="mt-5"></div>
+
+                    {# DATES #}
+                    <div class="row mx-auto">
+                        <div class="mx-auto text-center"> 
+                            <p class="txtNoir sizeTxt">Date d'arrivée</p> 
+                            <input class="form-control mt-1em" type="date" name="date_debut" required>
+                        </div>
+
+                        <div class="mx-auto text-center"> 
+                            <p class="txtNoir sizeTxt">Date de départ</p>
+                            <input class="form-control mt-1em" type="date" name="date_fin" required>
+                        </div>
+                    </div>
+
+
+<hr class="my-5 w-50">
+
+
+
+                {# </div> #}
+
+                {# <hr class="my-5 w-50"> #}
+                {# <div class="my-5em"></div> #}
+
+
+                {# RESUME #}
+                <h4 class="text-center txtNoir sizeTxt mt-5">Résumé de votre voyage</h4>
+
+                <div class="col-12 col-sm-9 form-text mx-auto mb-5">
+                    <textarea class="form-control mx-auto" id="texte_voyage" rows="10" name="resume" placeholder="Faites un résumé de votre voyage en quelques lignes" required></textarea>
+                </div>
+                
+                {# CREATION D'ETAPE #}
+                {# <h4 class="text-center txtNoir sizeTxt mt-5">Ajouter une étape</h4>
+            
+                <div class="col-12 col-sm-9 form-text mx-auto">
+                    <input type="text" class="form-control mx-auto" name="sous_titre" placeholder="sous-titre" required>
+                </div>
+
+                <div class="col-12 col-sm-9 form-text mx-auto">
+                    <textarea class="form-control" id="texte_voyage" rows="10" name="description" placeholder="Une petite description de votre étape" required></textarea>
+                </div> #}
+
+
+                {# <h4 class="text-center txtNoir sizeTxt sizeTxt mt-5 mb-2">Image de couverture :</h4> #}
+
+                {# AJOUT FICHIER #}
+                <div class="row form-files justify-content-center">
+                    <div class="rectangle-files addfiles bgWhite pb-5 px-5">
+                        <h4 class="text-center txtNoir sizeTxt mt-5 mb-2">Image de couverture :</h4>
+                        <input type="file" class="form-control-file" id="ajoutFichiers" name="couverture">
+                    </div>
+                </div>
+
+                {# PARTAGE #}
+                <div class="row justify-content-center mt-5">
+                    <label class="rectangle-checkbox checkbox">
+                        <input type="checkbox" name="statut" value="Prive" class="txtNoir"> Partager ce voyage uniquement avec mes amis
+                    </label>
+                </div>
+
+                {# BOUTON AJOUT VOYAGE #}
+                <div class="text-center">
+                    <a href="{{path('parametres')}}">
+                        <button type="submit" class="btn btn-info btnContact mt-5" name="btnVoyages">Ajouter le Voyage</button>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+{% block javascripts %}{% endblock %}

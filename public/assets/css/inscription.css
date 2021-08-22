@@ -1,0 +1,94 @@
+/************** titre Travelog ************/
+    .travelog {
+        color: var(--turquoise);
+        font-family: 'Rancho', cursive;
+        font-size:5em;
+        letter-spacing:0.15em;
+        text-align: center;
+    }
+
+    @media (max-width : 600px) {
+        .travelog {
+            font-size:3em;
+        }
+    }
+
+
+/************** Logo Travelog ************/
+    .logo {
+        height: 8em;
+        width: 8em;
+    }
+
+
+/************** encadré de connexion ************/
+    .cadreBeige {
+        background-color: #dcdacd;
+        height:28em;
+        width:27em;
+        border: solid var(--turquoise) 0.2em;
+    }
+
+
+/************** titre (inscription) ************/
+    .txtInscription {
+        text-align:center;
+        font-size:1.6em;
+        padding-top:0.8em;
+    }
+
+
+/************** inputs ************/
+    .pseudoinscription, .adressemailinscription, .motdepasseinscription, .confirmationmotdepasseinscription {
+        border : solid var(--grisFonce) 0.01em;
+        border-radius:0.25em;
+        font-size:1.25em;
+        height:2.15em;
+        width: 14.5em;
+        padding-left:0.5em;
+    }
+
+
+/************** btn connexion ************/
+    .btnInscription {
+        font-size:1.5em;
+        color:white;
+        background-color: var(--turquoise);
+        border-radius:0.25em;
+        width:8em;
+        height:1.8em;
+    }
+
+    .btnInscription:hover {
+       box-shadow: 5px 5px 5px #2a4946 inset;
+       font-size:1.4em;
+       color: white;
+       margin-bottom: 0.50em !important;
+    }
+
+
+/************** lien de connexion ************/
+    .connectLink:hover {   
+        text-decoration: none;  
+        color: rgb(43, 43, 43) !important;
+    }
+
+    .connectLink:link, .connectLink:visited {
+        color: var(--turquoise);
+    }
+
+    .formulaireInscription {
+        color:#707070;
+        max-width:18em;
+        margin-left:5em;
+    }
+
+
+/************** liens ************/
+    .lienProfil, a.lienCGU{
+        color:#707070  !important;
+    }
+
+    .lienProfil:hover{
+        color:#707070 !important;
+    }

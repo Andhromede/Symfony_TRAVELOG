@@ -1,0 +1,86 @@
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/footer.css')}}">
+{% endblock %}
+
+<footer class="page-footer font-small indigo my-auto mt-footer">
+	<div class="container-fluid text-center text-md-left bgTurquoise mt-footer ">
+		<div class="row txtDiv bg-body mx-auto">
+
+            {# CONDITIONS GENERALES (modal) #}
+            <div class="col-sm-12 col-md-3 my-auto mx-auto">
+				<a href="#!" data-toggle="modal" data-target="#exampleModalLongOne">Conditions générales d'utilisation</a>
+                <div>
+					<div class="modal fade" id="exampleModalLongOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+                                 <h5 class="modal-title text-dark" id="exampleModalLongTitle">Condtions générales d'utilisation :</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body text-dark">
+									(1) Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe iusto ad ipsum adipisci dolorem itaque quidem vero, obcaecati dolor sint accusantium iure harum beatae eaque animi rerum dicta architecto dolore?
+                                    Itaque voluptatem odit voluptatibus delectus nemo repellat animi iusto alias in dolores, ipsum impedit asperiores optio illum necessitatibus. Non beatae atque a deleniti cumque molestias velit autem quia soluta ducimus?
+                                    Corrupti temporibus optio ex totam laudantium quae aperiam, unde reprehenderit recusandae iste vitae repellat dolorem quia ea officia cumque amet necessitatibus blanditiis modi voluptatem in rerum labore? Exercitationem, nulla minima.
+                                    Dolore facilis dignissimos expedita non voluptas incidunt officia cum voluptate! Ea odit vel assumenda id necessitatibus praesentium voluptates, odio consequatur fuga asperiores? Saepe quae voluptatum fugit temporibus quo quas explicabo?
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-1"><div class="separateur2 mx-auto"></div></div>
+
+            {# MENTIONS LEGAL (modal) #}
+			<div class="col-md-2 my-auto mx-auto">
+				<a href="#!" data-toggle="modal" data-target="#exampleModalLong">Mentions légales</a>
+                <div>
+					<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+                                 <h5 class="modal-title text-dark" id="exampleModalLongTitle">Mentions légales :</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body text-dark">
+									(2) Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe iusto ad ipsum adipisci dolorem itaque quidem vero, obcaecati dolor sint accusantium iure harum beatae eaque animi rerum dicta architecto dolore?
+                                    Itaque voluptatem odit voluptatibus delectus nemo repellat animi iusto alias in dolores, ipsum impedit asperiores optio illum necessitatibus. Non beatae atque a deleniti cumque molestias velit autem quia soluta ducimus?
+                                    Corrupti temporibus optio ex totam laudantium quae aperiam, unde reprehenderit recusandae iste vitae repellat dolorem quia ea officia cumque amet necessitatibus blanditiis modi voluptatem in rerum labore? Exercitationem, nulla minima.
+                                    Dolore facilis dignissimos expedita non voluptas incidunt officia cum voluptate! Ea odit vel assumenda id necessitatibus praesentium voluptates, odio consequatur fuga asperiores? Saepe quae voluptatum fugit temporibus quo quas explicabo?
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-1"><div class="separateur2 mx-auto"></div></div>
+
+            {# CONTACT #}
+			<div class="col-md-1 col-sm-1 col-12 my-auto mx-auto">
+				<a href="{{path('contact')}}">Contact</a>
+			</div>
+
+			<div class="col-1"><div class="separateur2 mx-auto"></div></div>
+
+            {# Copyright #}
+			<div class="col-md-2 my-auto mx-auto">
+				<div>© Travelog</div>
+			</div>
+            
+		</div>
+	</div>
+</footer>
+
+
+{% block javascripts %}{% endblock %}
